@@ -1,0 +1,14 @@
+extends layout
+
+block script
+  link(rel='stylesheet', href='/stylesheets/sass/users.css')
+
+block content
+  body
+    h1 Welcome to me blog
+
+    each c in content
+      p Title is #{c.title}
+      div !{c.content}
+      p Author #{c.author}
+      hr
